@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.1.7.RELEASE</version>
+		<relativePath/>
+	</parent>
+
+	<artifactId>spring-boot-resteasy-parent</artifactId>
+	<version>1.0.0.BUILD-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>Spring Boot RESTEasy parent</name>
+	<description>Spring Boot RESTEasy parent</description>
+
+	<properties>
+		<java.version>1.6</java.version>
+		<resteasy.version>3.0.8.Final</resteasy.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.jboss.resteasy</groupId>
+				<artifactId>resteasy-spring</artifactId>
+				<version>${resteasy.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<url>http://spring.io</url>
+	<organization>
+		<name>Pivotal</name>
+		<url>http://spring.io</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>Apache 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+		</license>
+	</licenses>
+
+	<scm>
+		<url>http://github.com/wilkinsona/spring-boot-resteasy</url>
+		<connection>scm:git:git://github.com/wilkinsona/spring-boot-resteasy.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com/wilkinsona/spring-boot-resteasy.git</developerConnection>
+	</scm>
+
+	<developers>
+		<developer>
+			<id>wilkinsona</id>
+			<name>Andy Wilkinson</name>
+			<email>awilkinson@pivotal.io</email>
+		</developer>
+	</developers>
+
+</project>
