@@ -58,8 +58,7 @@ use `@Autowired` dependencies and inject external configuration with `@Value`. R
 
 # Limitations
 
-RESTEasy [requires any `@Bean` methods on `@Configuration` classes to be public][1]. If RESTEasy
-encounters a non-public `@Bean` method you will see an `IllegalStateException` thrown by
-`org.jboss.resteasy.plugins.spring.SpringBeanProcessor`.
+There's [a bug][1] in RESTEasy 3.0.10.Final that breaks its integration with Spring. The latest working
+version of RESTEasy is 3.0.9.Final.
 
-[1]: https://github.com/resteasy/Resteasy/pull/578
+[1]: https://github.com/resteasy/Resteasy/pull/615
